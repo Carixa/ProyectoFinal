@@ -1,3 +1,4 @@
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -7,10 +8,6 @@
         font-size: 30px;
         }
 
-        li{
-        list-style: none;
-        margin-right: 25px;
-        }
         .menu {
             display: flex;
             justify-content: space-between;
@@ -24,6 +21,13 @@
         .titular {
         text-align: center;
         margin-top: 200px;
+        }
+
+        .titular a:hover {
+            color: black;
+            transition: 0.5s;
+            transform: scale(1.1);
+            display: inline-block;
         }
 
         h1 {
@@ -41,6 +45,15 @@
             background-color: #8099e9;
             padding: 20px 30px 20px 30px;
             color: antiquewhite;
+            border-radius: 10px;
+
+        }
+        
+
+
+        nav a {
+            background: none;
+            color: black;
 
         }
 
@@ -67,6 +80,14 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center
+}
+
+.contenedor-sobremi a:hover {
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.1);
+    display: inline-block;
 }
 
 .contenedor-parrafo-y-boton {
@@ -92,13 +113,185 @@ flex-wrap: wrap;
 }
 
 .servicio {
-    width: 29%;
+    width: 23%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    color: antiquewhite;
 }
 
 .violeta {
-    background: #5055df;
+    background: #8099e9;
 }
 
 .celeste {
-    background: #40a8fa;
+    background: #49A79D;
+}
+
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  .servicio img {
+    float: right;
+  }
+  
+  .servicio p {
+    font-size: 18px;
+    height: 250px;
+  }
+
+  h3{
+    font-weight: bold;
+  }
+
+span {
+    font-size: 80px;
+    color: #8099e9;
+}
+
+.owl-nav {
+text-align: center;
+}
+
+.contenedor-porque {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contenedor-porque h4 {
+margin: 0;
+font-size: 20px;
+}
+
+.contenedor-porque p {
+font-size: 16px;
+line-height: 28px;
+}
+
+.porque-singular {
+    width: 28%;
+}
+
+.que-esperas {
+    background: rgb(109,101,140);
+    background: linear-gradient(168deg, rgba(109,101,140,0.9724264705882353) 21%, rgba(128,153,233,0.938813025210084) 52%, rgba(73,167,157,0.8575805322128851) 75%);
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.que-esperas h3 {
+    font-size: 23px;
+    color: antiquewhite;
+    margin-bottom: 40px;
+}
+
+.que-esperas a {
+    padding: 15px 45px 15px 45px;
+    justify-content: center;
+    transition: 0.5s;
+    background: #49A79D;
+}
+
+.que-esperas a:hover {
+    color: black;
+    transition: 0.5s;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.whatsapp a {
+    background: none;
+    position: fixed;
+    top: 80%;
+    right: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background:#b3d6d3;
+        width: 100%;
+        display: none;
+
+    }
+    nav .lista {
+        flex-direction: column;
+        
+    }
+
+    .menu-icon {
+        display: block;
+        width: 25px;
+    }
+
+    .titular {
+        margin-top: 54px;
+    }
+
+    h1 {
+        font-size: 49px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .contenedor-sobremi {
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo-y-boton {
+        width: 90%;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 72%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    .contenedor-porque {
+        flex-direction: column;
+    }
+
+    .porque-singular {
+        width: 95%;
+    }
+
+    .imagen-sobremi {
+        width: 95%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    header {
+        height: 53vh;
+    }
+
+    .imagen-sobremi {
+        width: 50%;
+    }
+
+    .servicio {
+        width: 44%;
+    }
+
 }
